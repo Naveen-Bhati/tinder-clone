@@ -1,0 +1,56 @@
+.sidebar__nav {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 12vh;
+  align-items: center;
+  padding-left: 15px;
+  background: linear-gradient(
+    to right,
+    blueviolet,
+    blueviolet,
+    rgb(161, 144, 173)
+  );
+  border: none;
+  /* background-image: linear-gradient(to bottom, #2c2c2c, #131313); */
+}
+.sidebar__nav > img {
+  height: 6.5vh;
+  width: 6.5vh;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 40px;
+  margin-top: 5px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.sidebar__nav > h3 {
+  color: white;
+  line-height: 1.1;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.sidebar__profile {
+  position: relative;
+  top: 3px;
+  display: flex;
+  place-items: center;
+}
+.nav__personicon {
+  margin-right: 15%;
+}
+.avatar__navbar {
+  background-color: green;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+.personButton {
+  color: white;
+  height: 40px !important;
+  width: 40px !important;
+  margin-top: 5px;
+}

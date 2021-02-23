@@ -1,0 +1,64 @@
+*,
+html {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.home {
+  display: flex;
+  overflow: hidden;
+}
+.home__mainScreen {
+  flex: 0.75;
+  height: 100vh;
+  background-color: #f5f7fa;
+}
+.MyProfile {
+  display: flex;
+}
+.MyProfile__chatscreen {
+  flex: 0.68;
+  border-right: 1px solid lightgray;
+}
+.MyProfile__myprofile {
+  flex: 0.32;
+}
+.home__matches {
+  flex: 0.25;
+  height: 100vh;
+  border-right: 1px solid rgba(211, 211, 211, 0.7);
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .home__matches {
+    flex: 0;
+    width: 0;
+    z-index: 0;
+  }
+  .home__mainScreen {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+  .MyProfile__chatscreen {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow-y: scroll;
+  }
+  .MyProfile__chatscreen::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* @media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 45%;
+  }
+} */

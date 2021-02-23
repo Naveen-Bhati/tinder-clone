@@ -1,0 +1,268 @@
+.profileSidebar {
+  height: 100vh;
+  flex: 0.25;
+  background-color: #f5f7fa;
+  min-width: 230px;
+  overflow-y: scroll;
+  border-right: 1px solid rgba(211, 211, 211, 0.7);
+}
+.profileSidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.backButton {
+  color: white !important;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.sidebar__body > strong {
+  display: block;
+  color: rgb(82, 79, 79);
+  margin-left: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.paidFeature__ultraPro {
+  background-color: inherit;
+  height: 15vh;
+  width: 100%;
+}
+.tinderUltraPro {
+  position: relative;
+  left: 10%;
+  top: 2.5vh;
+  background-color: white;
+  height: 10vh;
+  width: 80%;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  box-shadow: 1px 1px 5px 1px lightgrey;
+}
+.paidFeature__ultra {
+  background-color: inherit;
+  height: 15vh;
+  width: 100%;
+}
+.tinderUltra {
+  position: relative;
+  left: 10%;
+  top: 2.5vh;
+  background-color: white;
+  height: 10vh;
+  width: 80%;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  box-shadow: 1px 1px 5px 1px lightgrey;
+}
+.paidFeature__pro {
+  background-color: inherit;
+  height: 15vh;
+  width: 100%;
+}
+.tinderPro {
+  position: relative;
+  left: 10%;
+  top: 2.5vh;
+  background-color: white;
+  height: 10vh;
+  width: 80%;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  box-shadow: 1px 1px 5px 1px lightgrey;
+}
+
+.GetMore {
+  position: relative;
+  margin-top: 2vh;
+  height: 23vh;
+  background-color: inherit;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.GetMore__Boosts {
+  height: 80%;
+  width: 38%;
+  background-color: white;
+
+  box-shadow: 1px 1px 5px 1px lightgrey;
+  border-radius: 5px;
+}
+.GetMore__SuperLikes {
+  height: 80%;
+  width: 38%;
+  background-color: white;
+
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px lightgrey;
+}
+
+.getmore__contentsSuperlikes > p {
+  color: #62b4f9;
+}
+.getmore__contentsBoosts > p {
+  color: #915dd1;
+}
+.getmore__contentsBoosts {
+  text-align: center;
+}
+.getmore__contentsSuperlikes {
+  text-align: center;
+}
+.paidIcons {
+  position: relative;
+  top: -25px;
+}
+.superlikes {
+  color: #62b4f9 !important;
+}
+.boosts {
+  color: #915dd1 !important;
+}
+.paidIcons .MuiIconButton-root {
+  background-color: white;
+  box-shadow: 1px 1px 18px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+.settingDivs {
+  background-color: white;
+  height: 50px;
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  padding-left: 15px;
+  cursor: pointer;
+}
+.withbutton {
+  height: 65px;
+  padding-top: 15px;
+}
+.settingDivs > a {
+  display: block;
+  margin-top: 12px;
+  color: black;
+}
+.settingDivsButtons {
+  text-align: center;
+  padding-left: 0;
+}
+.maxDistance {
+  padding-left: 25px;
+  padding-right: 50px;
+  margin-top: 7px;
+}
+.maxDistance * .MuiSlider-root {
+  color: rgba(70, 7, 70, 0.8);
+}
+.comments {
+  padding-left: 15px;
+}
+.comments > p {
+  color: #5c5c5c;
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-family: ProximaNova, sans-serif;
+  padding-top: 10px;
+}
+.sidebar__tinderImage {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sidebar__tinderImage > img {
+  height: 6vh;
+  border-radius: 50%;
+}
+
+.on_off {
+  display: flex;
+  justify-content: space-between;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  margin-top: 10px;
+  margin-right: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 1px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgba(70, 7, 70, 0.8);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(70, 7, 70);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.constant_inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.constants {
+  margin-top: 15px;
+  margin-right: 20px;
+  color: #5c5c5c;
+  font-family: ProximaNova, sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.constants:hover {
+  color: blueviolet;
+}
+.constants > p:hover {
+  color: blueviolet;
+}
+@media only screen and (max-width: 768px) {
+  .profileSidebar {
+    flex: 0;
+
+    width: 0%;
+  }
+}

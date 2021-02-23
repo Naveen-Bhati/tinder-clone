@@ -1,0 +1,43 @@
+.myMessagesDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 10px;
+  border-bottom: 1px solid #fafafa;
+  font-family: ProximaNova, sans-serif;
+  color: #2c2c2c;
+  margin-top: 10px;
+}
+.myMessagesDiv:hover {
+  border-right: 4px solid blueviolet;
+  border-bottom: 1px soild lightgrey;
+  box-shadow: 0px 1px 20px 1px lightgray;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.chat__details {
+  flex: 1;
+}
+.chat__details > p {
+  color: gray;
+  margin: 5px;
+  font-size: 0.9em;
+}
+.chat__details > h4 {
+  font-family: ProximaNova, sans-serif;
+  color: #2c2c2c;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.chat__timestamp {
+  color: lightgray;
+}
+
+.chat__image {
+  margin-right: 20px;
+}

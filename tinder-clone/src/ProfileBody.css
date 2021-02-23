@@ -1,0 +1,70 @@
+.profileBody {
+  width: 100%;
+  height: 100vh;
+  overflow-y: overlay;
+  flex: 0.75;
+  color: white;
+  background-color: #f5f7fa;
+  overflow: hidden;
+}
+.main {
+  display: block;
+  min-width: 250px;
+  max-width: 35%;
+  margin-left: 33%;
+  margin-top: 3%;
+  height: 90vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 4px gray;
+  color: black;
+  overflow-y: scroll;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.main__name {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.main > img {
+  height: 65vh;
+  width: 100%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 10px;
+}
+.locationLogo {
+  color: gray !important;
+}
+.main__buttonDiv {
+  position: sticky;
+  bottom: 13px;
+  margin-left: 33%;
+}
+.main__location {
+  display: flex;
+}
+
+.main__button {
+  padding: 12px 30px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  line-height: 1.3215;
+  background: rgb(80, 27, 129);
+  border: none;
+  transition: 200ms;
+}
+.main__button:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 768px) {
+  .profileBody {
+    flex: 0%;
+    width: 0%;
+  }
+}

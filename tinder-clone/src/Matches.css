@@ -1,0 +1,121 @@
+.matches {
+  overflow: hidden;
+  z-index: 1;
+}
+.matchbuttons {
+  padding: 12px 20px;
+}
+.button__matches {
+  display: inline-block;
+  margin-right: 30px;
+}
+.buttons {
+  color: #2c2c2c;
+  padding: 8px 12px;
+  border: none;
+  background-color: inherit;
+  font-family: ProximaNova, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.buttonsClicked {
+  outline: none;
+}
+.button__messages {
+  display: inline-block;
+}
+
+.likes__container {
+  background-color: white;
+  padding-top: 1.3vh;
+  padding-bottom: 1.3vh;
+  background-color: white;
+  height: 100vh;
+  background-color: white;
+}
+.likes__container > div {
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  border: 4px solid blueviolet;
+  background-color: rgb(169, 111, 245);
+  height: 100px;
+  left: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: white;
+  font-weight: 700;
+  font-family: ProximaNova, sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.likes__container > div:hover {
+  transform: scale(1.15);
+}
+
+.heart {
+  background-image: url("https://img.icons8.com/emoji/48/000000/purple-heart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  height: 38px;
+  width: 38px;
+  top: 30px;
+  left: 20%;
+}
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: -5px;
+  background: #000;
+  height: 4px;
+  transition-property: left right;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+.underline:after,
+.underline:after,
+.underline:after {
+  right: 0;
+}
+.content {
+  width: 50%;
+
+  float: left;
+}
+
+#container {
+  width: 200%;
+  position: relative;
+  transition: 400ms;
+  left: 0;
+}
+
+#container.swipeToMessages {
+  left: -100%;
+}
+#container.swipeToMatches {
+  left: 0;
+}
+
+.likeIcon {
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  transform: rotate(28deg);
+}
+.mobileHeaderIcons__Matched {
+  color: blueviolet !important;
+}

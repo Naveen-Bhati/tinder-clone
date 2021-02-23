@@ -1,0 +1,65 @@
+.MyProfile {
+  width: 100%;
+  height: 100vh;
+  overflow-y: overlay;
+  flex: 0.75;
+  color: white;
+
+  overflow: hidden;
+}
+.Mymain {
+  position: relative;
+  width: 100%;
+
+  margin-left: 0px;
+  margin-top: 0px;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  overflow-y: scroll;
+}
+.Mymain::-webkit-scrollbar {
+  display: none;
+}
+.Mymain__name {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.Mymain > img {
+  height: 65vh;
+  width: 100%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.locationLogo {
+  color: gray !important;
+}
+.Mymain__buttonDiv {
+  position: sticky;
+  bottom: 0px;
+}
+.Mymain__location {
+  display: flex;
+}
+
+.Mymain__button {
+  padding: 20px 30px;
+  color: #5c5c5c;
+  cursor: pointer;
+  outline: none;
+  line-height: 1.3215;
+  letter-spacing: 0.05em;
+  width: 50%;
+  border: none;
+  background-color: white;
+  font-family: ProximaNova, sans-serif;
+  font-weight: 600;
+}
+.Mymain__button:hover {
+  background: linear-gradient(to right, blueviolet, lightgray);
+  color: white;
+}
